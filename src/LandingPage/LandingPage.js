@@ -8,7 +8,7 @@ import { SearchSuggestions } from './SearchSuggestions/SearchSuggestions';
 export function LandingPage(){
     return(
         <div>
-        <TopNav />
+            <TopNav />
                 <div className={styles['search-area']}>
                     <img src={logo} alt="Logo" className={styles.logo}/>
                     <SearchBar />
