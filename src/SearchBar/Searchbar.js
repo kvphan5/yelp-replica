@@ -1,30 +1,31 @@
 import React from 'react';
 import styles from './Searchbar.module.css';
 
-export function SearchBar(){
+export function SearchBar(props){
+    const sizeClass = props.small ? '' : 'is-medium';
     return (
-        <div className="field has-addons">
-            <div className="control">
-                <button className="button is-info is-medium">
+        <div className='field has-addons is-marginless'>
+            <p className="control">
+                <button className={`button is-info ${sizeClass}`}>
                 Search
                 </button>
-            </div>
-            <div className="control">
-                <input className={`input is-medium ${styles['input-control']}`} type="text" placeholder="Food"/>
-            </div>
-            <div className="control">
-                <button className="button is-info is-medium">
+            </p>
+            <p className="control">
+                <input className={`input ${sizeClass} ${styles['input-control']}`} type="text" placeholder="Food"/>
+            </p>
+            <p className="control">
+                <button className={`button is-info ${sizeClass}`}>
                 Near
                 </button>
-            </div>
-            <div className="control">
-                <input className={`input is-medium ${styles['input-control']}`} type="text" placeholder="Where"/>
-            </div>
-            <div className="button is-medium is-success">
+            </p>
+            <p className="control">
+                <input className={`input ${sizeClass} ${styles['input-control']}`} type="text" placeholder="Where"/>
+            </p>
+            <p className={`button ${sizeClass} is-success`}>
                 <span className="icon is-small">
                     <i className="fas fa-search"></i>
                 </span>
-            </div>
+            </p>
         </div>
     );
 }
