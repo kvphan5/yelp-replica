@@ -1,31 +1,51 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './Searchbar.module.css';
 
 export function SearchBar(props){
+    const [term, setTerm] = useState(props.term || '');
+    const [location, setLocation] = useState(props.location || '');
     const sizeClass = props.small ? '' : 'is-medium';
+
+    function submit(e){
+        if(typeof props.search === 'function'){
+            props.search(term,location)
+        }
+        console.log(term,location);
+        e.preventDefault();
+    }
+
     return (
-        <div className='field has-addons is-marginless'>
-            <p className="control">
-                <button className={`button is-info ${sizeClass}`}>
-                Search
-                </button>
-            </p>
-            <p className="control">
-                <input className={`input ${sizeClass} ${styles['input-control']}`} type="text" placeholder="Food"/>
-            </p>
-            <p className="control">
-                <button className={`button is-info ${sizeClass}`}>
-                Near
-                </button>
-            </p>
-            <p className="control">
-                <input className={`input ${sizeClass} ${styles['input-control']}`} type="text" placeholder="Where"/>
-            </p>
-            <p className={`button ${sizeClass} is-success`}>
-                <span className="icon is-small">
-                    <i className="fas fa-search"></i>
-                </span>
-            </p>
-        </div>
+        <form onSubmit={submit}>
+            <div className='field has-addons is-marginless'>
+                <div className="control">
+                    <div className={`button is-info ${sizeClass}`}>
+                    Search
+                    </div>
+                </div>
+                <p className="control">
+                    <input className={`input ${sizeClass} ${styles['input-control']}`} 
+                        onChange={(e) => setTerm(e.target.value)}
+                        type="text" 
+                        placeholder="Food"   
+                    />
+                </p>
+                <div className="control">
+                    <div className={`button is-info ${sizeClass}`}>
+                    Near
+                    </div>
+                </div>
+                <p className="control">
+                    <input className={`input ${sizeClass} ${styles['input-control']}`} 
+                        onChange={(e) => setLocation(e.target.value)}
+                        type="text" 
+                        placeholder="Where"/>
+                </p>
+                <p className={`button ${sizeClass} is-success`} onClick={submit}>
+                    <span className="icon is-small">
+                        <i className="fas fa-search"></i>
+                    </span>
+                </p>
+            </div>
+        </form>
     );
 }

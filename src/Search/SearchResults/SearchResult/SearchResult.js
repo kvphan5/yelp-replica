@@ -14,9 +14,9 @@ export function SearchResult(){
                 <BusinessRating />
                 <p>
                     $$&nbsp;
-                    <span class="tag is-primary">Info</span>
+                    <span className="tag is-primary">Info</span>
                     &nbsp;
-                    <span class="tag is-info">Info</span>
+                    <span className="tag is-info">Info</span>
                 </p>
            </div>
            <div className={styles['contact-info']}>
