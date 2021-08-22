@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/yelp-replica/static/css/main.be0e02d0.chunk.css",
-    "main.js": "/yelp-replica/static/js/main.510b1ffd.chunk.js",
-    "main.js.map": "/yelp-replica/static/js/main.510b1ffd.chunk.js.map",
+    "main.js": "/yelp-replica/static/js/main.8ee23f7d.chunk.js",
+    "main.js.map": "/yelp-replica/static/js/main.8ee23f7d.chunk.js.map",
     "runtime-main.js": "/yelp-replica/static/js/runtime-main.c69287d6.js",
     "runtime-main.js.map": "/yelp-replica/static/js/runtime-main.c69287d6.js.map",
     "static/css/2.847439e0.chunk.css": "/yelp-replica/static/css/2.847439e0.chunk.css",
-    "static/js/2.6a4b16ce.chunk.js": "/yelp-replica/static/js/2.6a4b16ce.chunk.js",
-    "static/js/2.6a4b16ce.chunk.js.map": "/yelp-replica/static/js/2.6a4b16ce.chunk.js.map",
+    "static/js/2.ee63fa0e.chunk.js": "/yelp-replica/static/js/2.ee63fa0e.chunk.js",
+    "static/js/2.ee63fa0e.chunk.js.map": "/yelp-replica/static/js/2.ee63fa0e.chunk.js.map",
     "static/js/3.8b30e8e2.chunk.js": "/yelp-replica/static/js/3.8b30e8e2.chunk.js",
     "static/js/3.8b30e8e2.chunk.js.map": "/yelp-replica/static/js/3.8b30e8e2.chunk.js.map",
     "index.html": "/yelp-replica/index.html",
     "static/css/2.847439e0.chunk.css.map": "/yelp-replica/static/css/2.847439e0.chunk.css.map",
     "static/css/main.be0e02d0.chunk.css.map": "/yelp-replica/static/css/main.be0e02d0.chunk.css.map",
-    "static/js/2.6a4b16ce.chunk.js.LICENSE.txt": "/yelp-replica/static/js/2.6a4b16ce.chunk.js.LICENSE.txt"
+    "static/js/2.ee63fa0e.chunk.js.LICENSE.txt": "/yelp-replica/static/js/2.ee63fa0e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c69287d6.js",
     "static/css/2.847439e0.chunk.css",
-    "static/js/2.6a4b16ce.chunk.js",
+    "static/js/2.ee63fa0e.chunk.js",
     "static/css/main.be0e02d0.chunk.css",
-    "static/js/main.510b1ffd.chunk.js"
+    "static/js/main.8ee23f7d.chunk.js"
   ]
 }
