@@ -4,13 +4,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bulma/css/bulma.css';
 import {
-  BrowserRouter as Router
+  BrowserRouter as Router,
+  HashRouter
 } from "react-router-dom";
 
 ReactDOM.render(
-    <Router>
+    <HashRouter>
       <App />
-    </Router>
+    </HashRouter>
   ,
   document.getElementById('root')
 );
