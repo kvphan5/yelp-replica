@@ -27,6 +27,7 @@ export function SearchBar(props){
                         onChange={(e) => setTerm(e.target.value)}
                         type="text" 
                         placeholder="Food"   
+                        value={term}
                     />
                 </p>
                 <div className="control">
@@ -38,7 +39,9 @@ export function SearchBar(props){
                     <input className={`input ${sizeClass} ${styles['input-control']}`} 
                         onChange={(e) => setLocation(e.target.value)}
                         type="text" 
-                        placeholder="Where"/>
+                        placeholder="Where"
+                        value={location}
+                    />
                 </p>
                 <p className={`button ${sizeClass} is-success`} onClick={submit}>
                     <span className="icon is-small">
