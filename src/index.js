@@ -4,10 +4,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bulma/css/bulma.css';
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
+  BrowserRouter as Router
 } from "react-router-dom";
 
 ReactDOM.render(
